@@ -1,5 +1,6 @@
 package com.TechTron.sellerbackend.controller;
 
+import com.TechTron.sellerbackend.data.dto.ProductDto;
 import com.TechTron.sellerbackend.data.entity.Product;
 import com.TechTron.sellerbackend.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,8 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Product> getProductById(@PathVariable int id){
+    public ProductDto getProductById(@PathVariable int id){
+
         return productService.getProductById(id);
     }
 

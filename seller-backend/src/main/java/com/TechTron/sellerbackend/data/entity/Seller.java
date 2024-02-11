@@ -22,7 +22,7 @@ public class Seller {
     @Column(name = "Name")
     private String name;
 
-    @Column(name = "E-mail")
+    @Column(name = "Email")
     private String email;
 
     @Column(name = "Mobile_Number")

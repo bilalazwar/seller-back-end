@@ -23,8 +23,4 @@ public class Category {
     @Column(name = "Category_Name")
     private String name;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "category")
-    private List<Product> product;
-
 }
