@@ -2,6 +2,7 @@ package com.TechTron.sellerbackend.data.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,8 +12,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@Schema(hidden = false)
 public class Product {
 
+    @Schema(hidden = true)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Product_Id")
@@ -22,7 +25,7 @@ public class Product {
     @JoinColumn(name = "Seller_FK",referencedColumnName = "Seller_Id")
     private Seller seller;
 
-    @JsonIgnore
+//    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "Category_FK",referencedColumnName = "Category_Id")
     private Category category;

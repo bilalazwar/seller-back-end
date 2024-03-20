@@ -41,6 +41,60 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+<!--		for amazon s3 bucket-->
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-aws -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-aws/2.2.6.RELEASE-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-aws</artifactId>
+			<version>2.2.6.RELEASE</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-s3</artifactId>
+			<version>1.12.667</version>
+		</dependency>
+
+<!--		spring-cloud-starter-aws acts as a layer of abstraction on top of the core AWS SDK, simplifying configuration and providing pre-built beans for common S3 operations.-->
+<!--		aws-java-sdk-s3 is the core library that handles the low-level communication with the S3 service using its API.-->
+
+<!--	    Together, these two dependencies provide a comprehensive solution for integrating your Spring Boot application with Amazon S3,-->
+<!--        enabling you to leverage robust cloud storage and object management features.-->
+
+
+
+
+
+
+
+
+
+		<!-- Swagger UI-->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
+		<!-- Swagger UI-->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger.core.v3</groupId>
+			<artifactId>swagger-annotations-jakarta</artifactId>
+			<version>2.2.19</version>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<build>
